@@ -28,6 +28,9 @@ div / section {
 	border: 1px black solid;
 	padding: 20px;
 }
+img{
+	opacity: 0.5;
+}
 #two_column {
     background-color: #FFB7CF;
     border: 1px black solid;
@@ -38,21 +41,24 @@ div / section {
     background-color: #E582A2;
     border: 1px black solid;
     padding: 20px;
-    float: left;
-    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    height: 365px;
+    width: 45%;
 }
 #right {
     background-color: #E55B88;
     border: 1px black solid;
     padding: 20px;
-    float: right;   
-    width: 62%;
+    display: inline-block; 
+    vertical-align: top;  
+    width: 45%;
 }
 .clearfix:after {
     visibility: hidden;
     display: block;
     font-size: 0;
-    content: " ";
+    content: "";
     clear: both;
     height: 0;
 }
