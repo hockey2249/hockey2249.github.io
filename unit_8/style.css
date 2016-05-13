@@ -1,83 +1,53 @@
 * {margin:0;padding:0;box-sizing:border-box;}
+
 header {
-	background-color: #FFED74;
-	border: 1px black solid;
-	padding: 20px;
+	padding: 4em;
+    background-image: url("images/SharkTank_Prime1.png");
+    background-repeat: no-repeat;
 }
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;   
+}
+
 nav a {
 	text-decoration: none;
-	color: black;
-	margin: 1em;
+	color: #ffffff;
+	margin-right: 2.5em;
+    padding: 1.2em;
 	display: inline-block;
 	font-family: 'sans serif', serif;
 	font-size: 1.5em;
-	text-shadow: 1px 1px 2px #aaa;
 }
 nav {
     background-color: #333;
-}
-ul {
-	list-style-type: none;
-	overflow:auto;
-}
-li {
-	float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px 7px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
-}
-aside {
-	background-color: #FFC675;
-	border: 1px black solid;
-	padding: 20px;
-}
-article {
-	background-color: #E89C6C;
-	border: 1px black solid;
-	padding: 20px;
-}
-footer {
-	background-color: #FF957E;
-	border: 1px black solid;
-	padding: 20px;
-}
-section {
-	background-color: #FFE2B8;
-	border: 1px black solid;
-	padding: 20px;
-}
- img {
     width: 100%;
-    height: auto;
-    opacity: 0.5;
 }
-#two_column {
-    background-color: #FFB7CF;
-    border: 1px black solid;
-    padding: 20px;
+img {
+    width: 100%;
 }
-#left {
-    background-color: #E582A2;
-    border: 1px black solid;
+
+footer {
+	padding: 20px;
+    text-align: center;
+}
+
+#wrapper {
+    background-color: #CEC6DB;
     display: block;
-    vertical-align: top;
-    height: 30em;
+    line-height: 1.5em;
+    padding: 2em;
+    margin: 2em;
 }
+
 #right {
-    background-color: #E55B88;
-    border: 1px black solid;
+    background-color: #CEC6DB;
     display: block; 
-    vertical-align: top; 
-    height: 30em;
-  
+    margin: 2em;
+    padding: 2em;
 }
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -86,7 +56,3 @@ section {
     clear: both;
     height: 0;
 }
-@media only screen and (max-width: 500px) {
-  #right { }
-}
-
