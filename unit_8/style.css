@@ -1,14 +1,27 @@
 * {margin:0;padding:0;box-sizing:border-box;}
 
+body {
+    font-size: 16px; /*1em = 16px*/
+}
 header {
 	padding: 4em;
-    background-image: url("images/SharkTank_Prime1.png");
     background-repeat: no-repeat;
+    position: relative;
 }
 
+header img {
+    width: 20%;
+    display: inline-block;
+}
+.slogan{
+    display: inline-block;
+    position: absolute;
+    padding-top: 3em;
+}
 h1 {
     text-align: center;
-    font-family: sans-serif;   
+    font-family: sans-serif; 
+    display: block;  
 }
 
 nav a {
@@ -48,6 +61,10 @@ footer {
     padding: 2em;
 }
 
+li {
+    padding: 10px;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -55,4 +72,36 @@ footer {
     content: "";
     clear: both;
     height: 0;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 1em;
+    }
+
+    .slogan{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 188px;
+    }
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slogan{
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .slogan h1 {
+        text-align: center;
+        font-size: 16px;
+    }
 }
