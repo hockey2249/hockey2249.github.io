@@ -2,6 +2,7 @@
 
 body {
     font-size: 16px; /*1em = 16px*/
+    background-color: #3260C3;
 }
 header {
 	padding: 4em;
@@ -9,7 +10,7 @@ header {
     position: relative;
 }
 
-header img {
+.shark {
     width: 20%;
     display: inline-block;
 }
@@ -17,13 +18,40 @@ header img {
     display: inline-block;
     position: absolute;
     padding-top: 3em;
+    font-family: 'Russo One', sans-serif;
+}
+a:hover { 
+    background-color: #3260C3;
 }
 h1 {
     text-align: center;
-    font-family: sans-serif; 
     display: block;  
 }
-
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: right;
+  color: #63717f;
+  padding-left: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
 nav a {
 	text-decoration: none;
 	color: #ffffff;
@@ -74,34 +102,55 @@ li {
     height: 0;
 }
 
-@media (max-width: 650px) {
-    header {
-        padding: 1em;
+@media(min-width: 400px; max-width: 500px){
+    header{
+        padding: 0em;
+        align-content: center;
     }
-
-    .slogan{
-        padding-top: 0;
+    header img{
+        width: 50%;
+    }
+    .container-1{
+    display: none;
     }
 }
-
-@media (max-width: 600px) {
-    header {
-        height: 188px;
+@media(max-width: 1149px){
+    .container-1{
+        padding: 8em;
     }
-    header img {
-        display: block;
-        margin: 0 auto;
+}
+@media(max-width: 845px){
+    header{
+        padding: 10em;
     }
-
+    .container-1{
+        padding: 10em;
+    }
+}
+@media(max-width: 750px){
+    .shark{
+        display: inline-block;
+    }
     .slogan{
-        display: block;
-        margin: auto;
-        left: 0;
-        right: 0;
+        font-size: 12px;
     }
-
-    .slogan h1 {
+}
+@media(max-width: 735px){
+    .slogan{
+        font-size: 8px;
         text-align: center;
-        font-size: 16px;
+        align-content: center;
+    }
+    .container-1{
+        padding: 6em;
+        border: 3em;
+    }
+    .shark{
+        width: 200px;
+    }
+}
+@media(max-width: 582px){
+    .container-1{
+        border: 6em;
     }
 }
